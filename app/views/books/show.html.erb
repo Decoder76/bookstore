@@ -1,0 +1,16 @@
+<%= render @book %>
+
+<div class="card mt-3 bg-dark">
+<p style="color: green"><b><%= notice %></b></p>
+<div class="container mt-5">
+<h5>Leave Comment</h5>
+<div class="d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="d-flex flex-column comment-section">
+              <%=render "comments/view"%>
+              <%=render "comments/form"%>
+            </div>
+        </div>
+</div>
+</div>
+</div>

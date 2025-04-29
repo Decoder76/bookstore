@@ -1,0 +1,34 @@
+<%= form_with(model: author, url: update_user_role_path do |form| %>
+
+<!-- <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        
+      </div>
+    </div>
+  </div>
+ -->
+  <!-- Text input -->
+  <div class="form-outline mb-4">
+    <%= form.label :"Author's_Name", style: "display: block" %>
+        <%= form.text_field :name , class:"form-control"%>
+  </div>
+
+  <!-- Text input -->
+  <div class="form-outline mb-4">
+        <%= form.label :About, style: "display: block" %>
+        <%= form.text_area :about,class:"form-control",rows: "4"%>
+         <span class="form-text">
+            <i>[must be 50 characters long]</i>
+        </span>
+  </div>
+
+
+  <div class="form-group mb-3" align="center">
+    <%= form.submit class:"btn btn-primary" %>
+  </div>
+<% end %>
